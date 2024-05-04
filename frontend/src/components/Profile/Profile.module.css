@@ -1,0 +1,140 @@
+
+@keyframes moveInOut {
+    0% {
+        transform: scale(0); /* Start with no scale (hidden) */
+    }
+    100% {
+        transform: scale(1); /* End with full scale (visible) */
+    }
+}
+
+
+@keyframes slideFromLeft {
+    0% {
+        width: 0; /* Start with 0 width */
+        overflow: hidden;
+    }
+    20%{
+        width: 10%;
+    }
+    50% {
+        width: 50%; /* Grow width a little */
+        overflow: hidden;
+        /* padding-left: 2rem;  */
+    }
+    70% {
+        width: 70%; /* Grow width a little */
+        overflow: hidden;
+        /* padding-left: 2rem;  */
+    }
+    100% {
+        width: 100%; /* Fully open the section */
+        overflow: hidden;
+        padding-left: 2rem; 
+    }
+}
+
+.profile, .hideProfile{
+
+    height: 100%;
+    width: 100%;
+    background-color: #EFF2F5;
+    border-right: 1px solid #bec4ca;
+
+}
+.hideContent{
+    width: 0;
+    overflow: hidden;
+}
+
+.profileTop{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    background-color: #008069;
+    color: white;
+}
+
+.backIcon{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.imageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background-color: #EFF2F5;
+    
+}
+.profileImage{
+    animation: moveInOut 0.5s ease-in-out;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    /* background-color: rgb(143, 61, 61); */
+    background-position: center;
+    background-size: cover;
+}
+
+.nameSection{
+    height: 13%;
+    width: 0;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px -2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 2rem; */
+    animation: slideFromLeft 0.3s ease forwards;
+    animation-delay: 0.3s;
+}
+.aboutSection{
+    width: 0;
+    overflow: hidden;
+    height: 13%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px -2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 2rem; */
+    /* padding-right: 1rem; */
+    animation: slideFromLeft 0.3s ease forwards;
+    animation-delay: 0.3s;
+}
+.nameSection h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+.nameSection p, .aboutSection p{
+    font-size: 0.9rem;
+    color: green;
+}
+.aboutSection p{
+    padding: 0;
+    margin: 2px;
+}
+.aboutSection h3{
+    font-size: 0.9rem;
+}
+
+.nameMsg{
+    height: 12%;
+    padding-top: 1.2rem ;
+
+    animation: slideFromLeft 0.3s ease forwards;
+    animation-delay: 0.3s;
+    width: 0;
+    overflow: hidden;
+}
+
+

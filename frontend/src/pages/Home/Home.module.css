@@ -1,0 +1,135 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.homeContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    transition: width 0.3s ease;
+    position: relative;
+
+}
+
+.showProfile{
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+.homeLeftHidden{
+    display: none;
+}
+.hideProfile{
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 0.2s ease; 
+    overflow: hidden; 
+}
+
+.homeLeft{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+.profileImage{
+    height: 3rem;
+    width:3rem;
+    border-radius: 50%;
+    background-position:center;
+    background-size: cover;
+}
+
+.leftTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid #b3b6b9;
+    height: 9%;
+    background-color: #EFF2F5;
+    /* padding: 5px; */
+    padding: 0 5px;
+}
+
+.leftTopRight{
+    display: flex;
+    align-items: center;
+}
+
+.nonBootstrap{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leftMid{
+    width: 100%;
+    background-color: white;
+    padding: 8px 20px;
+    border-bottom: 0.5px solid #b3b6b9;
+}
+.searchBar{
+    display: flex;
+    gap: 1rem ;
+    width: 100%;
+    background-color: #EFF2F5;
+    padding: 2px 10px;
+    border-radius: 5px;
+}   
+.inputForm{
+    width: 80%;
+}
+
+.inputForm input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+.homeRight{
+    width: calc(100% - 30%);
+    height: 100%;
+}
+
+/* .defaultScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.defaultScreen span{
+    margin-bottom: 2rem;
+}
+.defaultScreen h1{
+    font-weight: 250;
+}
+.webPara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.webPara p{
+    margin: 0;
+    padding: 0;
+} */

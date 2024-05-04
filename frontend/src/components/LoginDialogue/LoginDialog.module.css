@@ -1,0 +1,41 @@
+.dialog{
+    position: absolute;
+    height: 90%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    top: 15%;
+    /* left: calc((100% - 80%) / 2); */
+    left: 7%;
+    box-shadow: 0 0 10px 5px rgba(171, 169, 169, 0.5);
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}   
+
+.dialogLeft h2{
+    font-size: 2.5rem;
+    color: #40525D;
+    font-weight: 300;
+}
+.dialogLeft ol{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.qrCode{
+    position: relative;
+    overflow: hidden;
+}
+
+.googleAuth{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+.googleAuth > :first-child{
+    width: 100%;
+}

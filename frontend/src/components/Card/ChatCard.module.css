@@ -1,0 +1,36 @@
+.cardContainer, .greyCardContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 10px 10px 10px;
+    border-bottom: 0.5px solid rgb(158, 156, 156);
+}
+.cardContainer:hover{
+    background-color: rgb(245, 236, 236);
+    cursor: pointer;
+}
+.greyCardContainer{
+    background-color: rgb(212, 205, 205);
+}
+
+.cardImage{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.cardMid{
+    width: 60%;
+}
+.lastMessage p {
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+  }
+
+.lastMessageTime p{
+    font-weight: 300;
+    font-size: 0.8rem;
+}

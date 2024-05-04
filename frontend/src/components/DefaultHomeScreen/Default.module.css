@@ -1,0 +1,25 @@
+.defaultScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.defaultScreen span{
+    margin-bottom: 2rem;
+}
+.defaultScreen h1{
+    font-weight: 250;
+}
+.webPara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.webPara p{
+    margin: 0;
+    padding: 0;
+}
